@@ -1,0 +1,14 @@
+# github.com/codegangsta/negroni v1.0.0
+## explicit
+github.com/codegangsta/negroni
+# github.com/gomodule/redigo v2.0.0+incompatible
+github.com/gomodule/redigo/internal
+github.com/gomodule/redigo/redis
+# github.com/gorilla/mux v1.8.0
+## explicit
+github.com/gorilla/mux
+# github.com/xyproto/pinterface v0.0.0-20200201214933-70763765f31f
+github.com/xyproto/pinterface
+# github.com/xyproto/simpleredis v0.0.0-20201022102402-3ef49f016e6f
+## explicit
+github.com/xyproto/simpleredis
