@@ -1,12 +1,12 @@
-FROM golang as builder
-RUN go get github.com/codegangsta/negroni
-RUN go get github.com/gorilla/mux github.com/xyproto/simpleredis
-COPY main.go .
-RUN go build main.go
+# FROM golang as builder
+# RUN go get github.com/codegangsta/negroni
+# RUN go get github.com/gorilla/mux github.com/xyproto/simpleredis
+# COPY main.go ./
+# RUN go build main.go
 
 FROM busybox:ubuntu-14.04
 
-COPY --from=builder /go//main /app/guestbook
+COPY guestbook /app/guestbook
 
 ADD public/index.html /app/public/index.html
 ADD public/script.js /app/public/script.js
